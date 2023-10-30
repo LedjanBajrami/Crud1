@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacttus Education Trainings - CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="main-container">
+        <nav class="navbar navbar-light bg-light pt-0">
+            <div class="container">
+              <a class="navbar-brand mx-auto" href="#">
+                <img src="img/CACTTUSlogo.png" alt="" width="130" height="45">
+              </a>
+            </div>
+        </nav>
+        <section class="header d-flex align-items-center text-center text-white">
+            <div class="container position-relative">
+                <div class="row">
+                    <h1>Cacttus Education Trainings - CRUD</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="content border">
+            <div class="container-fluid border">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form id="form">
+                                    <label for="">Image</label>
+                                    <input type="file" name="image" id="image" accept="image/*">
+                                    <br>
+                                    <label for="">Title</label>
+                                    <input type="text" placeholder="Title" class="form-control" name="title" id="title" required>
+                                    <br>
+                                    <label for="">Description</label>
+                                    <textarea name="description" placeholder="Description" id="description" cols="30" rows="5" required class="form-control"></textarea>
+                                    <br>
+                                    <label for="">Price</label>
+                                    <input type="number" placeholder="Price" class="form-control" name="price" id="price" required>
+                                    <br>
+                                    <button class="btn btn-sm btn-success" id="submit" type="button" onclick="addData()">Add Course</button>
+                                    <button class="btn btn-sm btn-primary" id="update" type="button" onclick="addData()">Update</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12  d-flex align-items-center" id="crudCard">
+                        <div class="row">
+                            <!-- <div class="col-lg-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="img/img1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                  </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

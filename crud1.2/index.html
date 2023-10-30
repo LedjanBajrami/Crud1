@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solar System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css1/bootstrap.min.css"/>
+  <link rel="stylesheet" href="js1/bootstrap.min.js"/>
+</head>
+<body>
+  
+  <div class="solar-system">
+    <div class="sun"></div>
+    <div class="planet-container" id="mercury" title="Mercury"></div>
+    <div class="planet-container" id="venus" title="Venus"></div>
+    <div class="planet-container" id="earth" title="Earth"></div>
+    <div class="planet-container" id="mars" title="Mars"></div>
+    <div class="planet-container" id="jupiter" title="Jupiter"></div>
+    <div class="planet-container" id="saturn" title="Saturn"></div>
+    <div class="planet-container" id="uranus" title="Uranus"></div>
+    <div class="planet-container" id="neptune" title="Neptune"></div>
+    <div class="planet-container" id="pluto" title="Pluto"></div>
+  </div>
+
+  <div class="form">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color" value="#ffffff">
+
+      <label for="diameter">Diameter:</label>
+      <input type="number" id="diameter" name="diameter">
+
+      <label for="distance">Distance from the Sun :</label>
+      <input type="number" id="distance" name="distance">
+      <button type="submit">Add planet</button>
+
+      
+  
+    </form>
+    <div class="button-container d-flex ">
+      <button id="delete-planet" class="button">Delete Planet</button>
+      <button type="submit" id="update-all" class="button">Update Planets</button>
+      <button type="button" id="delete-all">Delete all planets</button>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-3">
+          <div class="card">      
+              <img src="img/earth.gif" class="image img-fluid mx-5" alt="">
+              <div class="card-body">
+              <h5 class="card-title">EARTH</h5>
+              <p class="card-text">Earth, our home planet, is a world unlike any other. The third planet from the sun, Earth is the only place in the known universe confirmed to host life. With a radius of 3,959 miles, Earth is the fifth largest planet in our solar system, and it's the only one known for sure to have liquid water on its surface.</p>
+              <a href="#" class="btn btn-danger">More...</a>
+            </div>
+            </div>
+          </div>
+        
+        <div class="col-xs-12 col-md-12 col-lg-3">
+          <div class="card">
+            <!-- <iframe src="https://giphy.com/embed/l0MYB89UFsVqLY5oc" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>             -->
+            <img src="img/mercury.gif"class="image img-fluid mx-5" alt="">
+            <div class="card-body">
+              <h5 class="card-title">VENUS</h5>
+              <p class="card-text">Earth, our home planet, is a world unlike any other. The third planet from the sun, Earth is the only place in the known universe confirmed to host life. With a radius of 3,959 miles, Earth is the fifth largest planet in our solar system, and it's the only one known for sure to have liquid water on its surface.</p>
+              <a href="#" class="btn btn-danger">More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-3">
+          <div class="card">
+            <!-- <iframe src="https://giphy.com/embed/l0HlO4V8iCRME3i0g" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>             -->
+            <img src="img/venus.gif"class="image img-fluid mx-5" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Mercury</h5>
+              <p class="card-text">Earth, our home planet, is a world unlike any other. The third planet from the sun, Earth is the only place in the known universe confirmed to host life. With a radius of 3,959 miles, Earth is the fifth largest planet in our solar system, and it's the only one known for sure to have liquid water on its surface.</p>
+              <a href="#" class="btn btn-danger">More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-3">
+          <div class="card">
+            <!-- <iframe src="https://giphy.com/embed/l0HlO4V8iCRME3i0g" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>             -->
+            <img src="img/mars.gif"class="image img-fluid mx-5" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Mars</h5>
+              <p class="card-text">Earth, our home planet, is a world unlike any other. The third planet from the sun, Earth is the only place in the known universe confirmed to host life. With a radius of 3,959 miles, Earth is the fifth largest planet in our solar system, and it's the only one known for sure to have liquid water on its surface.</p>
+              <a href="#" class="btn btn-danger">More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination d-flex justify-content-left mt-5">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+  <script src="js/solar-system.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+.solar-system {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* margin: 50px auto; */
+   
+    background-image: url(../img/universe.jpeg);
+    /* box-shadow: inset 0 0 50px #fff, 0 0 50px #fff; */
+  }
+  
+  /* Sun */
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    border-radius: 50%;
+    z-index: 1000;
+    background-color: #ff0;
+    box-shadow: 0 0 50px #ff0, inset 0 0 10px #fff;
+  }
+  
+  /* Planet Container */
+  .planet-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+    transform-origin: 50% 200px;
+  }
+  
+  /* Planet */
+  .planet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #e1dbdb;
+  }
+
+  .form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .form input[type="text"],
+  .form input[type="number"],
+  .form input[type="color"] {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .form button[type="submit"],
+  .form button[type="button"],
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #066e2c;
+    margin-top: 10px;
+    
+    cursor: pointer;
+  }
+
+  .form button[type="submit"]:hover,
+  .form button[type="button"]:hover,
+  .button:hover {
+    background-color: #119d16;
+  }
+
+   .planet:hover::before {
+    content: attr(title);
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    padding: 5px;
+    background-color: #0a0909;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+ 
+  label {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    padding-right: 5px auto;
+  }
+
+
+  #update-all {
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+
+  
+  
+  
+    
+  
+
